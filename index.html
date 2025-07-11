@@ -1,83 +1,14 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vibração de Cores Robótica</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: black;
-            overflow: hidden;
-            flex-direction: column;
-            animation: fadeIn 0.1s ease-in-out;
-        }
-        .robotic-text {
-            font-size: 7rem;
-            font-weight: bold;
-            text-transform: uppercase;
-            font-family: Arial, sans-serif;
-            text-align: center;
-            line-height: 1.25;
-            position: relative;
-            white-space: nowrap;
-            display: flex;
-            gap: 80px;
-            animation: marquee 10.5s linear infinite;
-        }
-        .robotic-text span {
-            display: inline-block;
-            transition: all 0.1s ease-in-out;
-        }
-        @keyframes marquee {
-            from { transform: translateX(0); }
-            to { transform: translateX(-50%); }
-        }
-        @keyframes fadeIn {
-            from { background-color: black; }
-            to { background-color: white; }
-        }
-    </style>
+    <title>site em repositorio</title>
 </head>
 <body>
-    <div class="robotic-text" id="text">
-        <span style="color: yellow;">Venha</span>
-        <span style="color: red;">Aprender</span>
-        <span style="color: green;">Robótica</span>
-        <span style="color: blue;">Na</span>
-        <span style="color: yellow;">Jaime Cortesão!</span>
-        <span style="color: yellow;">Venha</span>
-        <span style="color: red;">Aprender</span>
-        <span style="color: green;">Robótica</span>
-        <span style="color: blue;">Na</span>
-        <span style="color: yellow;">Jaime Cortesão!</span>
-        <span style="color: yellow;">Venha</span>
-        <span style="color: red;">Aprender</span>
-        <span style="color: green;">Robótica</span>
-        <span style="color: blue;">Na</span>
-        <span style="color: yellow;">Jaime Cortesão!</span>
-        <span style="color: yellow;">Venha</span>
-        <span style="color: red;">Aprender</span>
-        <span style="color: green;">Robótica</span>
-        <span style="color: blue;">Na</span>
-        <span style="color: yellow;">Jaime Cortesão!</span>
-    </div>
-    
-    <script>
-        function vibrateText() {
-            const lines = document.querySelectorAll(".robotic-text span");
-            lines.forEach(line => {
-                let x = (Math.random() - 0.5) * 10;
-                let y = (Math.random() - 0.5) * 10;
-                let color = `hsl(${Math.random() * 360}, 100%, 50%)`;
-                line.style.transform = `translate(${x}px, ${y}px)`;
-                line.style.color = color;
-            });
-        }
-        setInterval(vibrateText, 100);
-    </script>
+    <h1> ola, mundo rs</h1>
+    <hr>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam rerum quisquam aliquid nobis nostrum blanditiis unde quia culpa? Perferendis ipsam odio quis consequuntur dolorem veritatis quam saepe perspiciatis ab nisi?
+    </p>
 </body>
 </html>
